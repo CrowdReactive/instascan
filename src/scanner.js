@@ -107,7 +107,7 @@ class Analyzer {
       })
     }
   }
-git 
+
   analyze() {
     if (!this.video.videoWidth) {
       return null;

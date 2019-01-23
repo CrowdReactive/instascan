@@ -1,5 +1,5 @@
 function cameraName(label) {
-  let clean = label.replace(/\s*\([0-9a-f]+(:[0-9a-f]+)?\)\s*$/, '');
+  let clean = label.replace(/\s*\([0-9a-f]+(:[0-9a-f]+)?\)\s*$/, "");
   return clean || label || null;
 }
 
@@ -55,7 +55,7 @@ class Camera {
 
     let devices = await navigator.mediaDevices.enumerateDevices();
     return devices
-      .filter(d => d.kind === 'videoinput')
+      .filter(d => d.kind === "videoinput")
       .map(d => new Camera(d.deviceId, cameraName(d.label)));
   }
 

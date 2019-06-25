@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.1
+
+- Fixed a regex matching issue. (https://github.com/schmich/instascan/issues/154)
+
 ## 2.0.0
 
 - Removed `babel-polyfill` as it conflicts with other instances.
